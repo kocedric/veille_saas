@@ -148,6 +148,30 @@
             <img class="img-fluid imgFig" src="img/saas5.png" alt="">
           </a>
 
+          <h2 class="section-heading">Qu’est-ce que CaaS ?</h2>
+          <p>CaaS, abréviation pour Container-as-a-Service, est un modèle d’affaires dans lequel les fournisseurs de Cloud Computing proposent des services liés à la virtualisation basée sur les conteneurs en tant que services évolutifs en ligne. Ceci permet aux utilisateurs finaux d’utiliser des services de conteneurs sans avoir à fournir l’infrastructure dont ils auraient besoin. Il s’agit d’un terme marketing qui se réfère à des modèles de services Cloud existants tels que les services IaaS (Infrastucture as a Service), PaaS (Platform as a Service) et SaaS (Software as a Service).</p>
+
+          <p>Un service de conteneur est un service de fournisseur de cloud computing, qui permet aux utilisateurs de développer, tester, exécuter ou distribuer des logiciels à travers des conteneurs dits d’application dans des infrastructures informatiques.</p>
+
+          <p>Les applications de conteneurs sont un concept du domaine de Linux. La technologie permet la virtualisation au niveau du système d’exploitation. Les applications individuelles, y compris toutes les dépendances comme les bibliothèques et les fichiers de configuration, sont exécutées sous la forme d’instances encapsulées. Ceci permet le fonctionnement en parallèle de plusieurs applications avec des exigences différentes sur un même système d’exploitation, ainsi que le déploiement sur une large gamme de systèmes.</p>
+
+
+          <h2 class="section-heading">Serverless ou FAAS (Function As A Service), une révolution ?</h2>
+          <p>nitié par AWS en 2014 avec son service Lambda, le serverless est un modèle de cloud-computing où le développeur n’a plus qu’à fournir son code, sous forme de fonctions, au provider de service serverless ou FAAS (pour Function As A Service). Afin d’exécuter la logique métier contenue dans cette fonction, il suffit à l’application de requêter le Cloud Provider chez lequel la fonction est hébergée. Résultat : c’est le Cloud Provider qui va se charger de maintenir les serveurs, et de garantir que la fonction continue de répondre chaque fois qu’elle est interrogée.</p>
+
+
+          <h2 class="section-heading">La compatibilité du code</h2>
+          <p>Étant donné que la fonction sera hébergée et déployée sur un Cloud Provider serverless, elle doit respecter les règles mises en place par le Cloud Provider choisi.</p>
+
+          <p>Les deux règles principales sont :</p>
+          <ul>
+            <li>les langages : AWS Lambda n’accepte par exemple nativement que des fonctions écrites en C#, Java, Node.js, Go, Ruby ou Python. Des solutions existent néanmoins afin de pouvoir faire fonctionner n’importe quel autre langage, comme PHP par exemple, sur Lambda.</li>
+
+            <li>le respect du temps limite d’exécution de la fonction (15 minutes sur AWS Lambda mais ce temps limite est abaissé à 30 secondes si l’événement qui invoke la fonction est une requête HTTP)</li>
+          </ul>
+
+
+
         </div>
       </div>
     </div>
